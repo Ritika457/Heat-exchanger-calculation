@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+.sidebar{
+    width:250px;
+    background:#1f2937;
+    color:white;
+    padding:20px;
+}
+
+.sidebar h2{
+    margin-bottom:30px;
+}
+
+.sidebar button{
+    width:100%;
+    padding:12px;
+    margin-bottom:10px;
+    cursor:pointer;
+}
+
+.content{
+    flex:1;
+    padding:40px;
+    background:#f4f4f4;
+}
+
+.form{
+    display:grid;
+    grid-template-columns:220px 300px;
+    gap:15px 20px;
+    margin-top:25px;
+    align-items:center;
+}
+
+.form input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+#calculate{
+    width:180px;
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#calculate:hover{
+    background:#0b5ed7;
+}
+
+
+.history-table {
+    width: max-content;
+    border-collapse: collapse;
+}
+
+.history-container {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+/* =========================
+   Current Calculation Layout
+   ========================= */
+
+.calculation-layout {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.input-section {
+    width: 45%;
+}
+
+.result-section {
+    width: 50%;
+}
+
+.input-section h2,
+.result-section h2 {
+    margin-top: 0;
+}
+
+/* .result-section {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    box-sizing: border-box;
+} */
+
+.result-section h3 {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.result-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.result-grid div {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.result-grid span {
+    font-weight: 500;
+}
+
+.result-grid strong {
+    font-weight: 600;
+}
+
+.no-result {
+    color: #666;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+
+/* Responsive */
+@media (max-width: 900px) {
+
+    .calculation-layout {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .input-section,
+    .result-section {
+        width: 100%;
+    }
+
+}
+
+.input-header {
+    display: grid;
+    grid-template-columns: 200px 270px;
+    gap: 30px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}

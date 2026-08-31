@@ -1,0 +1,46 @@
+# Credentials
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Private datasets
+*.xlsx
+*.xls
+*.csv
+data/
+datasets/
+
+# Python environment and generated files
+fenv/
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local databases and dumps
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+backups/
+
+# Temporary/generated files
+~$*
+*.log
+*.tmp
+structure.txt
+structure.ps1
+
+# Editor/system files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
+
+# Frontend tooling (if added later)
+node_modules/
+dist/

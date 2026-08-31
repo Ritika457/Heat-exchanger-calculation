@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heat Exchanger Login</title>
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <div class="login-container">
+
+        <h1>Heat Exchanger</h1>
+
+        <form id="loginForm">
+
+            <div class="input-group">
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter User ID"
+                    required>
+            </div>
+
+            <div class="input-group">
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter Password"
+                    required>
+            </div>
+
+            <button type="submit">
+                Login
+            </button>
+
+            <p id="error-message"></p>
+
+        </form>
+
+    </div>
+    <script>
+    if (sessionStorage.getItem("isLoggedIn") === "true") {
+        window.location.href = "dashboard.html";
+    }
+    </script>
+
+    <script src="js/login.js"></script>
+
+</body>
+
+</html>
