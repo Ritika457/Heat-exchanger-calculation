@@ -1,0 +1,44 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.pfx
+*.p12
+*credentials*
+*secret*
+# Private or generated datasets and documents
+data/
+datasets/
+!backend/app/data/
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.docx
+*.pdf
+*.sql
+*.bak
+*.zip
+*.7z
+*.db
+*.sqlite*
+runtime/
+cleaning_events.json
+# Local environments and tooling
+.venv/
+venv/
+fenv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.claude/
+.codex/
+.idea/
+.vscode/
+*.log
+*.tmp
+Thumbs.db
+.DS_Store
