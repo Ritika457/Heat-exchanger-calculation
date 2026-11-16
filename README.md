@@ -1,5 +1,15 @@
 # Heat Exchanger Cleaning Optimizer
 
+## Latest project: Multi-exchanger cleaning optimizer
+
+Explore the **[Heat Exchanger Optimizer](heat-exchanger-optimizer/README.md)** for multi-equipment monitoring, fouling forecasts, cleaning-cycle detection and cost-based maintenance scenarios. This runnable portfolio edition includes synthetic sensors and local storage, plus generic data-preparation and backtesting tools. No company data or credentials are included.
+
+**Start here:** [Setup, features and architecture](heat-exchanger-optimizer/README.md) Â· [Source code](heat-exchanger-optimizer/) Â· [Tests](heat-exchanger-optimizer/backend/tests/test_portfolio.py)
+
+---
+
+## Original calculation application
+
 A full-stack engineering application for monitoring heat-exchanger operating data, calculating thermal-performance indicators, and retaining calculation history. The project combines a FastAPI backend, a browser-based dashboard, and Microsoft SQL Server integration.
 
 ## What it does
@@ -22,19 +32,19 @@ A full-stack engineering application for monitoring heat-exchanger operating dat
 
 ```text
 heat_exchanger/
-├── backend/
-│   ├── app/
-│   │   ├── calculations/    # Thermal calculation functions
-│   │   ├── database/        # Database configuration and connection
-│   │   ├── models/          # Request and response models
-│   │   ├── repositories/    # Data persistence
-│   │   ├── routers/         # API endpoints
-│   │   ├── services/        # Application workflow
-│   │   └── main.py          # FastAPI application
-│   └── tests/               # Unit tests
-├── frontend/                # Dashboard, styles, and browser logic
-├── .env.example             # Safe configuration template
-└── requirements.txt         # Python dependencies
+â”œâ”€â”€ backend/
+â”‚   â”œâ”€â”€ app/
+â”‚   â”‚   â”œâ”€â”€ calculations/    # Thermal calculation functions
+â”‚   â”‚   â”œâ”€â”€ database/        # Database configuration and connection
+â”‚   â”‚   â”œâ”€â”€ models/          # Request and response models
+â”‚   â”‚   â”œâ”€â”€ repositories/    # Data persistence
+â”‚   â”‚   â”œâ”€â”€ routers/         # API endpoints
+â”‚   â”‚   â”œâ”€â”€ services/        # Application workflow
+â”‚   â”‚   â””â”€â”€ main.py          # FastAPI application
+â”‚   â””â”€â”€ tests/               # Unit tests
+â”œâ”€â”€ frontend/                # Dashboard, styles, and browser logic
+â”œâ”€â”€ .env.example             # Safe configuration template
+â””â”€â”€ requirements.txt         # Python dependencies
 ```
 
 ## Local setup
